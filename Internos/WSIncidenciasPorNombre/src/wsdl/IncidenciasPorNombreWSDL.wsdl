@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://stpa/IncidenciasPorNombreWSDL/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	name="IncidenciasPorNombreWSDL"
+	targetNamespace="http://stpa/IncidenciasPorNombreWSDL/">
+	<wsdl:types>
+		<xsd:schema
+			targetNamespace="http://stpa/IncidenciasPorNombreWSDL/">
+
+			<xsd:element name="IncidenciasPorNombreOperation">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="nombre" type="xsd:string" />
+						<xsd:element name="idEstado" type="xsd:string"
+							minOccurs="0">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+			<xsd:element name="IncidenciasPorNombreOperationResponse"
+				type="tns:IncidenciasPorNombreOperationResponseType">
+
+			</xsd:element>
+
+			<xsd:complexType
+				name="IncidenciasPorNombreOperationResponseType">
+				<xsd:sequence>
+					<xsd:element name="incidenciaInfo"
+						type="tns:IncidenciaInfoType" maxOccurs="unbounded"
+						minOccurs="0">
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:complexType name="IncidenciaInfoType">
+				<xsd:sequence>
+					<xsd:element name="numero" type="xsd:string"></xsd:element>
+					<xsd:element name="titulo" type="xsd:string"></xsd:element>
+					<xsd:element name="descripcion" type="xsd:string"></xsd:element>
+					<xsd:element name="fechaAlta" type="xsd:string"></xsd:element>
+					<xsd:element name="fechaCierre" type="xsd:string"></xsd:element>
+					<xsd:element name="estado" type="xsd:string"></xsd:element>
+					<xsd:element name="idEstado" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+
+			<xsd:element name="ListaEstadosResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="estadoInfo" type="tns:EstadoInfo"
+							minOccurs="0" maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="ListaEstadosRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:complexType name="EstadoInfo">
+				<xsd:sequence>
+					<xsd:element name="id" type="xsd:string"></xsd:element>
+					<xsd:element name="nombre" type="xsd:string"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="DetalleIncidenciaRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="idIncidencia" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="DetalleIncidenciaResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="incidenciaInfo" type="tns:IncidenciaInfoType" minOccurs="0" maxOccurs="1"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="IncidenciasPorNombreOperationRequest">
+		<wsdl:part element="tns:IncidenciasPorNombreOperation"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="IncidenciasPorNombreOperationResponse">
+		<wsdl:part element="tns:IncidenciasPorNombreOperationResponse"
+			name="parameters" />
+	</wsdl:message>
+
+	<wsdl:message name="ListaEstadosRequest">
+		<wsdl:part name="parameters" element="tns:ListaEstadosRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="ListaEstadosResponse">
+		<wsdl:part name="parameters"
+			element="tns:ListaEstadosResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DetalleIncidenciaRequest">
+		<wsdl:part name="parameters" element="tns:DetalleIncidenciaRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="DetalleIncidenciaResponse">
+		<wsdl:part name="parameters" element="tns:DetalleIncidenciaResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="IncidenciasPorNombreWSDL">
+		<wsdl:operation name="IncidenciasPorNombre">
+			<wsdl:input
+				message="tns:IncidenciasPorNombreOperationRequest" />
+			<wsdl:output
+				message="tns:IncidenciasPorNombreOperationResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="ListaEstados">
+
+			<wsdl:input message="tns:ListaEstadosRequest"></wsdl:input>
+			<wsdl:output message="tns:ListaEstadosResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="DetalleIncidencia">
+			<wsdl:input message="tns:DetalleIncidenciaRequest"></wsdl:input>
+			<wsdl:output message="tns:DetalleIncidenciaResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="IncidenciasPorNombreWSDLSOAP"
+		type="tns:IncidenciasPorNombreWSDL">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="IncidenciasPorNombre">
+			<soap:operation
+				soapAction="http://stpa/IncidenciasPorNombreWSDL/IncidenciasPorNombre" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ListaEstados">
+			<soap:operation
+				soapAction="http://stpa/IncidenciasPorNombreWSDL/ListaEstados" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="DetalleIncidencia">
+			<soap:operation
+				soapAction="http://stpa/IncidenciasPorNombreWSDL/DetalleIncidencia" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="IncidenciasPorNombre">
+		<wsdl:port binding="tns:IncidenciasPorNombreWSDLSOAP"
+			name="IncidenciasPorNombreSOAP">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
