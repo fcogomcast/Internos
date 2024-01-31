@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://documentostributas.tributasenasturias.es/WSDocumentosTributas/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WSDocumentosTributas" targetNamespace="http://documentostributas.tributasenasturias.es/WSDocumentosTributas/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://documentostributas.tributasenasturias.es/WSDocumentosTributas/">
+      <xsd:element name="AltaDocumento">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="Documento" type="tns:DocumentoType"
+          		minOccurs="1" maxOccurs="1">
+          	</xsd:element>
+                        <xsd:element name="ElementoRelacionado" type="tns:ElementoRelacionadoType" minOccurs="0" maxOccurs="1">
+          		<xsd:annotation>
+          			<xsd:documentation>
+          				Elemento con el que se relacionará el
+          				documento
+          			</xsd:documentation>
+          		</xsd:annotation></xsd:element>
+                        <xsd:element name="usuario" type="xsd:string"
+          		minOccurs="1" maxOccurs="1">
+          		<xsd:annotation>
+          			<xsd:documentation>
+          				Código de usuario de Tributas que da de alta
+          				el documento
+          			</xsd:documentation>
+          		</xsd:annotation>
+          	</xsd:element>
+          	<xsd:element name="comprimir" type="xsd:boolean"
+          		minOccurs="1" maxOccurs="1">
+          		<xsd:annotation>
+          			<xsd:documentation>
+          				Indica si se debe comprimir el contenido de
+          				fichero recibido.
+          			</xsd:documentation>
+          		</xsd:annotation>
+          	</xsd:element>
+
+          	<xsd:element name="comprimido" type="xsd:boolean"
+          		minOccurs="1" maxOccurs="1">
+          		<xsd:annotation>
+          			<xsd:documentation>
+          				Indica el estado de compresión del contenido
+          				de fichero recibido. Si ya está comprimido,
+          				sería redundante el comprimirlo de nuevo.
+          			</xsd:documentation>
+          		</xsd:annotation>
+          	</xsd:element>
+
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AltaDocumentoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+
+          	<xsd:element name="Resultado" type="tns:ResultadoType"></xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AltaDocumento_fault">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="AltaDocumento_fault"
+      				type="xsd:string">
+      			</xsd:element>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    
+            <xsd:complexType name="DocumentoType">
+            	<xsd:sequence>
+            		<xsd:element name="nombre" type="xsd:string" minOccurs="1"
+	          		maxOccurs="1">
+	          		<xsd:annotation>
+	          			<xsd:documentation>
+	          				Nombre de fichero cuyo contenido se va a
+	          				almacenar.
+	          			</xsd:documentation>
+	          		</xsd:annotation>
+	          	</xsd:element>
+	          	<xsd:element name="descripcion" type="xsd:string"
+	          		minOccurs="1" maxOccurs="1">
+	          		<xsd:annotation>
+	          			<xsd:documentation>
+	          				Descripción del contenido del documento
+	          			</xsd:documentation>
+	          		</xsd:annotation>
+	          	</xsd:element>
+	          	<xsd:element name="contenido" type="xsd:base64Binary"
+	          		minOccurs="1" maxOccurs="1">
+	          		<xsd:annotation>
+	          			<xsd:documentation>
+	          				Contenido del fichero, codificado en base64
+	          			</xsd:documentation>
+	          		</xsd:annotation>
+	          	</xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="ConsultaDocumento">
+            	<xsd:complexType>
+            		<xsd:sequence>
+            			<xsd:element name="idDocumento" type="xsd:string"></xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+            <xsd:element name="ConsultaDocumentoResponse">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+
+            			<xsd:element name="Resultado"
+            				type="tns:ResultadoType">
+            			</xsd:element>
+            			<xsd:element name="Documento"
+            				type="tns:DocumentoType">
+                            <xsd:annotation>
+                            	<xsd:documentation>
+                            		Datos del documento devuelto
+                            	</xsd:documentation>
+                            </xsd:annotation>
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+    
+            <xsd:complexType name="ResultadoType">
+            	<xsd:sequence>
+            		<xsd:element name="codigo" type="xsd:string">
+            			<xsd:annotation>
+            				<xsd:documentation>
+            					Código del resultado
+            				</xsd:documentation>
+            			</xsd:annotation></xsd:element>
+            		<xsd:element name="mensaje" type="xsd:string">
+            			<xsd:annotation>
+            				<xsd:documentation>
+            					Mensaje asociado al resultado
+            				</xsd:documentation>
+            			</xsd:annotation></xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+            <xsd:element name="ConsultaDocumento_fault">
+            	<xsd:complexType>
+            		<xsd:sequence>
+
+            			<xsd:element name="ConsultaDocumento_fault"
+            				type="xsd:string">
+            			</xsd:element>
+            		</xsd:sequence>
+            	</xsd:complexType>
+            </xsd:element>
+    
+            <xsd:complexType name="ElementoRelacionadoType">
+            	<xsd:sequence>
+            		<xsd:element name="id" type="xsd:string" minOccurs="1" maxOccurs="1">
+            			<xsd:annotation>
+            				<xsd:documentation>
+            					Identificador del elemento
+            				</xsd:documentation>
+            			</xsd:annotation></xsd:element>
+            		<xsd:element name="tipo" minOccurs="1"
+            			maxOccurs="1">
+            			<xsd:annotation>
+            				<xsd:documentation>
+            					Tipo del elemento: GESTION=Expediente de
+            					Gestión, EJECUTIVA=Expediente de
+            					Ejecutiva
+            				</xsd:documentation>
+            			</xsd:annotation>
+            			<xsd:simpleType>
+            				<xsd:restriction base="xsd:string">
+            					<xsd:enumeration value="GESTION"></xsd:enumeration>
+            					<xsd:enumeration value="EJECUTIVA"></xsd:enumeration>
+            				</xsd:restriction>
+            			</xsd:simpleType>
+            		</xsd:element>
+            	</xsd:sequence>
+            </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="AltaDocumentoRequest">
+    <wsdl:part element="tns:AltaDocumento" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AltaDocumentoResponse">
+    <wsdl:part element="tns:AltaDocumentoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AltaDocumento_faultMsg">
+  	<wsdl:part name="parameters" element="tns:AltaDocumento_fault"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConsultaDocumentoRequest">
+  	<wsdl:part name="parameters" element="tns:ConsultaDocumento"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConsultaDocumentoResponse">
+  	<wsdl:part name="parameters" element="tns:ConsultaDocumentoResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ConsultaDocumento_faultMsg">
+  	<wsdl:part name="parameters" element="tns:ConsultaDocumento_fault"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="WSDocumentosTributas">
+    <wsdl:operation name="AltaDocumento">
+      <wsdl:input message="tns:AltaDocumentoRequest"/>
+      <wsdl:output message="tns:AltaDocumentoResponse"/>
+            <wsdl:fault name="fault" message="tns:AltaDocumento_faultMsg"></wsdl:fault>
+        </wsdl:operation>
+    <wsdl:operation name="ConsultaDocumento">
+    	<wsdl:input message="tns:ConsultaDocumentoRequest"></wsdl:input>
+    	<wsdl:output message="tns:ConsultaDocumentoResponse"></wsdl:output>
+            <wsdl:fault name="fault" message="tns:ConsultaDocumento_faultMsg"></wsdl:fault>
+        </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSDocumentosTributasSOAP"
+  	type="tns:WSDocumentosTributas">
+
+  	<soap:binding style="document"
+  		transport="http://schemas.xmlsoap.org/soap/http" />
+  	<wsdl:operation name="AltaDocumento">
+
+  		<soap:operation
+  			soapAction="http://documentostributas.tributasenasturias.es/WSDocumentosTributas/AltaDocumento" />
+  		<wsdl:input>
+
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+
+  	<wsdl:operation name="ConsultaDocumento">
+  		<soap:operation
+  			soapAction="http://documentostributas.tributasenasturias.es/WSDocumentosTributas/ConsultaDocumento" />
+  		<wsdl:input>
+  			<soap:body use="literal" />
+  		</wsdl:input>
+  		<wsdl:output>
+  			<soap:body use="literal" />
+  		</wsdl:output>
+  		<wsdl:fault name="fault">
+  			<soap:fault use="literal" name="fault" />
+  		</wsdl:fault>
+  	</wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSDocumentosTributas">
+    <wsdl:port binding="tns:WSDocumentosTributasSOAP" name="WSDocumentosTributasSOAP">
+      <soap:address location="http://bus:7101/WSInternos/ProxyServices/WSDocumentosTributas"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
