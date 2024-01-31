@@ -4,16 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f7fd12d-222e-40b1-82b7-231c8e13399c" name="Changes" comment="" />
+    <list default="true" id="280a6dc9-39bf-4c75-84b6-d932e624b074" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/WebContent/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/WebContent/WEB-INF/lib/IncidenciasPorNombreWSDL_wsdl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/WebContent/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/WebContent/WEB-INF/weblogic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/deploy.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/deploy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/resources/inherit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/DetalleIncidencia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/DetalleIncidenciaRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/DetalleIncidenciaResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/DetalleIncidenciasPorNombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/DetalleIncidenciasPorNombreResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/EstadoInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/Estados.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciaInfoType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciasPorNombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciasPorNombreOperation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciasPorNombreOperationResponseType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciasPorNombreWSDL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/IncidenciasPorNombre_IncidenciasPorNombreSOAPImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/ListaEstados.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/ListaEstadosRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/ListaEstadosResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/ObjectFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/IncidenciasPorNombre_IncidenciasPorNombreSOAPImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/handler/SoapServerHandler.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/handler/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/handler/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/handler/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/services/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/ConsultaIncidencias/preferencias/Preferencias.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/ConsultaIncidencias/preferencias/PreferenciasException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/ConsultaIncidencias/preferencias/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/ConsultaIncidencias/preferencias/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/ConsultaIncidencias/preferencias/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/ILogger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/SoapServerLogger.LEVEL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/SoapServerLogger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/TributasLogger.LEVEL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/TributasLogger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/Log/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/exception/IncidenciasNombreException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/exception/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/exception/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/exception/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/resultadoIncidenciasNombre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stpa/utils/utilsDB.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/javadoc/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/services/IncidenciasPorNombre/IncidenciasPorNombre_IncidenciasPorNombreSOAPImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/services/IncidenciasPorNombre/LogMessageHandler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/services/handler/SoapServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/ConsultaIncidencias/preferencias/Preferencias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/ConsultaIncidencias/preferencias/PreferenciasException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/Log/ILogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/Log/SoapServerLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/Log/TributasLogger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/exception/IncidenciasNombreException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/stpa/utils/utilsDB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/WSIncidenciasPorNombre/src/wsdl/IncidenciasPorNombreWSDL.wsdl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/src/main/java/stpa/services/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Internos/wars/WSIncidenciasPorNombre.war" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="2biYMT729vNJoqRC5zOylNX3FKB" />
+  <component name="ProjectId" id="2biZgQEDUCGBKpUtZquwvgHMXUU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,17 +125,49 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "jdk.selected.JAVA_MODULE": "1.8 (2)",
+    "last_opened_file_path": "C:/Users/mario.ramosesquinas/Desktop/STPAsturias/Internos"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\Internos\wars" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="WSIncidenciasPorNombre" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/WSIncidenciasPorNombre" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f7fd12d-222e-40b1-82b7-231c8e13399c" name="Changes" comment="" />
-      <created>1706699319417</created>
+      <changelist id="280a6dc9-39bf-4c75-84b6-d932e624b074" name="Changes" comment="" />
+      <created>1706699976481</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706699319417</updated>
+      <updated>1706699976481</updated>
     </task>
     <servers />
   </component>
