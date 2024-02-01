@@ -1,2 +1,2 @@
 rootProject.name = "Internos"
-include("WSIncidenciasPorNombre","WSDocumentosTributas","LoggerBus","WSControlHorario")
+include("WSIncidenciasPorNombre","WSDocumentosTributas","LoggerBus","WSControlHorario","WSDocumentos")

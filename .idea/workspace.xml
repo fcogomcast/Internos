@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280a6dc9-39bf-4c75-84b6-d932e624b074" name="Changes" comment="Actualización del archivo workspace.xml">
-      <change afterPath="$PROJECT_DIR$/WSControlHorario/build.gradle" afterDir="false" />
+    <list default="true" id="280a6dc9-39bf-4c75-84b6-d932e624b074" name="Changes" comment="WSControlHorario compilado">
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/custodia/types/CustodiarPDFConstruido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/custodia/types/CustodiarPDFConstruidoResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/AltaReimprimible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/AltaReimprimibleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ImpresionGD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ImpresionGDResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ObtenerReimprimible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ObtenerReimprimibleGDRE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ObtenerReimprimibleGDREResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WSDocumentos/src/es/tributasenasturias/servicios/documentos/jaxws/ObtenerReimprimibleResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
@@ -34,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "1.8 (2)",
-    "last_opened_file_path": "C:/Users/mario.ramosesquinas/Desktop/STPAsturias/Internos/WSControlHorario",
+    "last_opened_file_path": "C:/Users/mario.ramosesquinas/Desktop/STPAsturias/Internos/WSDocumentos",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -43,12 +53,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\jars" />
+      <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\WSDocumentos\src\es\tributasenasturias\servicios\documentos" />
+      <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\WSDocumentos\src\es\tributasenasturias\servicios\documentos\custodia\types" />
       <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\wars" />
+      <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\jars" />
       <recent name="C:\Users\mario.ramosesquinas\Desktop\STPAsturias\Internos\Internos\wars" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WSControlHorario">
+  <component name="RunManager" selected="Gradle.WSDocumentos">
     <configuration name="LoggerBus" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -76,6 +88,29 @@
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/WSControlHorario" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="WSDocumentos" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/WSDocumentos" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
@@ -146,6 +181,7 @@
       <item itemvalue="Gradle.WSDocumentosTributas" />
       <item itemvalue="Gradle.LoggerBus" />
       <item itemvalue="Gradle.WSControlHorario" />
+      <item itemvalue="Gradle.WSDocumentos" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -189,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706776696591</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="WSControlHorario compilado">
+      <option name="closed" value="true" />
+      <created>1706777828461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706777828461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +255,7 @@
     <MESSAGE value="WSDocumentosTributas compilado" />
     <MESSAGE value="LoggerBus.jar compilado" />
     <MESSAGE value="Actualización del archivo workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualización del archivo workspace.xml" />
+    <MESSAGE value="WSControlHorario compilado" />
+    <option name="LAST_COMMIT_MESSAGE" value="WSControlHorario compilado" />
   </component>
 </project>

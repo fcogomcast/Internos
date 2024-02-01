@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LoggerBus" />
             <option value="$PROJECT_DIR$/WSControlHorario" />
+            <option value="$PROJECT_DIR$/WSDocumentos" />
             <option value="$PROJECT_DIR$/WSDocumentosTributas" />
             <option value="$PROJECT_DIR$/WSIncidenciasPorNombre" />
           </set>
