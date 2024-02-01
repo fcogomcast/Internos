@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+// Configuración de compilación y ejecución
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// Dependencias del proyecto
+dependencies {
+    implementation 'org.apache.xmlbeans:xmlbeans:3.1.0'
+}
+
+// Ruta de las clases Java a compilar
+sourceSets {
+    main {
+        java {
+            srcDirs 'src'
+        }
+    }
+}
+
+// Tareas de compilación y empaquetado
+tasks.withType(JavaCompile) {
+    options.encoding = 'Cp1252'
+}
+
+// Configuración específica para el plugin 'java' (JAR)
+jar {
+    archiveFileName = "$buildDir/libs/LoggerBus.jar" // Cambia esto por el nombre que desees para tu archivo JAR
+}
